@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-key="title">AI in Public Finance: Transforming Government Financial Operations</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%20100%20100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Comprehensive guide to AI applications in public finance: fraud detection, tax collection, budget forecasting with real-world case studies from USA, Estonia, and Singapore.">
+    <meta name="keywords" content="AI public finance, artificial intelligence government, machine learning tax collection, predictive budgeting, fraud detection AI">
+    <meta name="robots" content="index, follow">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AI in Public Finance: Transforming Government Financial Operations",
+        "description": "Comprehensive analysis of AI applications in public finance including fraud detection, tax collection automation, and budget forecasting with case studies from USA, Estonia, and Singapore.",
+        "datePublished": "2025-12-05",
+        "dateModified": "2025-12-05",
+        "author": {
+            "@type": "Organization",
+            "name": "AI Public Finance Research"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "AI in Public Finance Initiative",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%20100%20100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "#main-content"
+        },
+        "keywords": [
+            "AI public finance",
+            "artificial intelligence government",
+            "machine learning tax collection",
+            "predictive budgeting",
+            "fraud detection AI"
+        ],
+        "articleSection": ["Applications", "Case Studies", "Benefits & Risks"],
+        "mentions": [
+            {
+                "@type": "Thing",
+                "name": "47% improved fraud detection accuracy",
+                "description": "IRS AI implementation"
+            },
+            {
+                "@type": "Thing",
+                "name": "95% tax declarations auto-filled",
+                "description": "Estonia digital tax system"
+            },
+            {
+                "@type": "Thing",
+                "name": "92% budget forecasting accuracy",
+                "description": "Singapore predictive budgeting"
+            }
+        ],
+        "countryOfOrigin": ["US", "EE", "SG"],
+        "inLanguage": ["en", "pl", "fr"]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does AI improve tax collection efficiency?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI improves tax collection efficiency by automating processes (like Estonia's 95% auto-filled declarations), identifying non-compliance patterns through machine learning, and optimizing collection strategies. The IRS AI system processes 240M returns annually with 47% improved fraud detection accuracy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the main risks of AI in public finance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Key risks include: 1) Algorithmic bias in decision-making, 2) Data privacy and security concerns, 3) Lack of transparency in AI systems, 4) Workforce displacement, and 5) High implementation costs requiring careful governance frameworks."
+                }
+            }
+        ]
+    }
+    </script>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #1a365d;
+            --secondary-blue: #2d5a8c;
+            --accent-orange: #d45a1a;
+            --light-gray: #f5f7fa;
+            --medium-gray: #e2e8f0;
+            --dark-gray: #4a5568;
+            --text-dark: #2d3748;
+            --white: #ffffff;
+            --heading-blue: #3a7bd5;
+            --light-blue-bg: #e8f4ff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-gray);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+            margin-bottom: 1rem;
+            color: var(--heading-blue);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--medium-gray);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            background-color: var(--light-blue-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--heading-blue);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--heading-blue);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--accent-orange);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1030;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Merriweather', serif;
+        }
+        
+        .logo span {
+            color: var(--accent-orange);
+        }
+        
+ /* REMOVE OLD NAV CSS (lines 70-105 approximately) and REPLACE WITH: */
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 1.5rem;  /* Creates equal spacing between all items */
+        }
+
+        nav a {
+            color: var(--white);
+            font-weight: 600;
+            padding: 0.75rem 1rem;  /* Added horizontal padding for better spacing */
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;  /* Consistent minimum height for all items */
+            transition: all 0.3s ease;
+            border-radius: 4px;  /* Optional: rounded corners */
+        }
+
+        nav a:hover {
+            color: var(--accent-orange);
+            background-color: rgba(255, 255, 255, 0.1);  /* Subtle background on hover */
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;  /* Slightly thicker underline */
+            bottom: 8px;  /* Adjusted position */
+            left: 1rem;   /* Start from padding edge */
+            right: 1rem;  /* End at padding edge */
+            background-color: var(--accent-orange);
+            transition: width 0.3s ease;
+            margin: 0 auto;  /* Center the underline */
+        }
+
+        nav a:hover::after {
+            width: calc(100% - 2rem);  /* Account for padding */
+        }
+
+        /* Remove the old animation effect */
+        nav a::before {
+            display: none;
+        }
+
+        nav a:hover::before {
+            display: none;
+        }
+        
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            margin-left: 1rem;
+        }
+        
+        .lang-btn {
+            background: transparent;
+            border: 1px solid var(--white);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+        }
+        
+        .lang-btn.active {
+            background: var(--accent-orange);
+            border-color: var(--accent-orange);
+        }
+  
+        .carousel {
+            margin-top: 0;
+        }
+        
+        .carousel-item {
+            height: 500px;
+        }
+        
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .carousel-caption h1 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .carousel-caption p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+        
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        
+        .hero-fallback {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+            display: none;
+        }
+        
+        .hero-fallback h1 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-fallback p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-orange);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #b34715;
+            color: var(--white);
+        }
+        
+        .btn-primary {
+            background-color: #d45a1a;
+            border-color: #d45a1a;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #b34715;
+            border-color: #b34715;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(212, 90, 26, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+        
+        main {
+            background-color: var(--white);
+            padding: 3rem 0;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-header {
+            background-color: var(--light-blue-bg);
+            color: var(--heading-blue);
+            padding: 1rem;
+            font-weight: 600;
+            border-bottom: 1px solid #b3d9ff;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--light-blue-bg) 0%, #d4e7ff 100%);
+            color: var(--heading-blue);
+            font-weight: 600;
+            border-bottom: none;
+            padding: 1.25rem 1.5rem;
+            border-left: 5px solid var(--heading-blue);
+        }
+        
+        .chart {
+            display: flex;
+            align-items: flex-end;
+            height: 300px;
+            margin: 1.5rem 0;
+            gap: 15px;
+        }
+        
+        .chart-bar {
+            flex: 1;
+            background: linear-gradient(to top, var(--secondary-blue), var(--primary-blue));
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            transition: height 0.5s;
+        }
+        
+        .chart-bar:nth-child(2) {
+            background: linear-gradient(to top, #2d8c5a, #1a6d41);
+        }
+        
+        .chart-bar:nth-child(3) {
+            background: linear-gradient(to top, var(--accent-orange), #b34715);
+        }
+        
+        .chart-bar:nth-child(4) {
+            background: linear-gradient(to top, #8c2d2d, #6d1a1a);
+        }
+        
+        .chart-bar:nth-child(5) {
+            background: linear-gradient(to top, #5a2d8c, #411a6d);
+        }
+        
+        .chart-bar:nth-child(6) {
+            background: linear-gradient(to top, #2d8c8c, #1a6d6d);
+        }
+        
+        .chart-bar:nth-child(7) {
+            background: linear-gradient(to top, #8c8c2d, #6d6d1a);
+        }
+        
+        .chart-bar:nth-child(8) {
+            background: linear-gradient(to top, #8c5a2d, #6d411a);
+        }
+        
+        .chart-bar:nth-child(9) {
+            background: linear-gradient(to top, #2d5a8c, #1a416d);
+        }
+        
+        .chart-label {
+            text-align: center;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            font-size: 0.7rem;
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+        
+        .chart-value {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+        
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            margin-right: 10px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 2px;
+            object-fit: cover;
+        }
+        
+        .card-body a {
+            color: var(--accent-orange);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        
+        .card-body a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .glossary-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .glossary-term {
+            background-color: var(--light-blue-bg);
+            padding: 1rem;
+            border-left: 4px solid var(--accent-orange);
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .glossary-term h4 {
+            margin-bottom: 0.5rem;
+            color: var(--heading-blue);
+        }
+        
+        .statistics-section {
+            margin-bottom: 3rem;
+        }
+        
+        .statistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--light-blue-bg) 0%, #e8f4ff 100%);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            border-left: 4px solid var(--accent-orange);
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            font-weight: 600;
+        }
+        
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+        }
+        
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+        }
+        
+        .modal-content {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-header {
+            border-radius: 12px 12px 0 0;
+            padding: 1.5rem;
+            background-color: var(--light-blue-bg);
+            color: var(--heading-blue);
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .modal-footer {
+            border-top: 1px solid #e2e8f0;
+            padding: 1.5rem;
+        }
+        
+        .accordion-button {
+            font-family: 'Merriweather', serif;
+            font-weight: 600;
+            background-color: var(--light-blue-bg);
+            border: 1px solid #e2e8f0;
+            color: var(--heading-blue);
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #d4e7ff;
+            color: var(--heading-blue);
+            box-shadow: none;
+        }
+        
+        .accordion-button:focus {
+            border-color: #d45a1a;
+            box-shadow: 0 0 0 0.25rem rgba(212, 90, 26, 0.25);
+        }
+        
+        .accordion-button:hover {
+            background-color: #f1f5f9;
+        }
+        
+        .accordion-body {
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-left: 3px solid #d45a1a;
+        }
+        
+        footer.bg-dark {
+            background: linear-gradient(135deg, #1a365d 0%, #162a4a 100%) !important;
+            color: #ffffff;
+        }
+        
+        footer h3, footer h5 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        }
+        
+        footer a.text-light:hover {
+            color: #d45a1a !important;
+            transition: color 0.3s ease;
+        }
+        
+        footer .input-group .form-control {
+            border: none;
+            padding: 0.75rem 1rem;
+        }
+        
+        footer .input-group .btn-primary {
+            padding: 0.75rem 1.5rem;
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-control:focus {
+            border-color: #d45a1a;
+            box-shadow: 0 0 0 0.25rem rgba(212, 90, 26, 0.25);
+        }
+        
+        .form-select:focus {
+            border-color: #d45a1a;
+            box-shadow: 0 0 0 0.25rem rgba(212, 90, 26, 0.25);
+        }
+        
+        .list-group-item.bg-transparent {
+            background-color: transparent !important;
+            padding-left: 0.5rem;
+            border: none;
+            margin-bottom: 0.5rem;
+        }
+        
+        .list-group-item i {
+            color: #d45a1a;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .contact-section .card {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-section {
+            background-color: #ffffff;
+        }
+        
+        .faq-section .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        nav a:hover::before {
+            left: 100%;
+        }
+        
+        .icon-feature {
+            font-size: 2.5rem;
+            color: #d45a1a;
+            margin-bottom: 1rem;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .modal-header.bg-primary {
+            background-color: var(--light-blue-bg) !important;
+            color: var(--heading-blue) !important;
+        }
+        /* Reader Mode Styles */
+        .reader-mode {
+                font-family: Georgia, 'Times New Roman', Times, serif !important;
+                line-height: 1.8 !important;
+                background-color: #fefefe !important;
+                color: #333 !important;
+                max-width: 800px !important;
+                margin: 0 auto !important;
+                padding: 2rem !important;
+            }
+
+            .reader-mode h1,
+            .reader-mode h2,
+            .reader-mode h3,
+            .reader-mode h4 {
+                font-family: Georgia, 'Times New Roman', Times, serif !important;
+                color: #222 !important;
+                border-bottom: 1px solid #eee !important;
+                padding-bottom: 0.5rem !important;
+                margin-top: 2rem !important;
+                border-left: none !important;
+                background-color: transparent !important;
+            }
+
+            .reader-mode h2 {
+                font-size: 1.8rem !important;
+            }
+
+            .reader-mode .card,
+            .reader-mode .carousel,
+            .reader-mode .statistics-grid,
+            .reader-mode .footer,
+            .reader-mode .contact-section,
+            .reader-mode .faq-section {
+                display: none !important;
+            }
+
+            .reader-mode main {
+                background-color: transparent !important;
+                padding: 0 !important;
+            }
+
+            .reader-mode .chart-container {
+                display: none !important;
+            }
+
+            .reader-mode p {
+                font-size: 1.1rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .reader-mode ul,
+            .reader-mode ol {
+                margin-left: 1.5rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .reader-mode li {
+                margin-bottom: 0.5rem !important;
+            }
+            /* Reader Mode Toggle Button */
+            .reader-mode-toggle {
+                            position: fixed;
+                            bottom: 30px;
+                            right: 30px;
+                            z-index: 9999;
+                            background: var(--primary-blue);
+                            color: white;
+                            border: none;
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                            cursor: pointer;
+                            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.5rem;
+                            transition: all 0.3s ease;
+                        }
+
+                        .reader-mode-toggle:hover {
+                            background: var(--secondary-blue);
+                            transform: scale(1.1);
+                            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+                        }
+
+                        .reader-mode-toggle.active {
+                            background: var(--accent-orange);
+                        }
+
+                        .reader-mode-toggle .toggle-icon {
+                            transition: transform 0.3s ease;
+                        }
+
+                        .reader-mode-toggle.active .toggle-icon {
+                            transform: rotate(180deg);
+                        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;  /* Smaller gap on mobile */
+            }
+            
+            nav a {
+                padding: 0.5rem 0.75rem;  /* Smaller padding on mobile */
+                min-height: 36px;  /* Smaller minimum height */
+                font-size: 0.9rem;  /* Optional: slightly smaller font */
+            }
+            
+            nav a::after {
+                bottom: 4px;  /* Adjusted for mobile */
+                left: 0.75rem;
+                right: 0.75rem;
+            }
+            
+            nav a:hover::after {
+                width: calc(100% - 1.5rem);
+            }
+        }
+            
+            .carousel-item {
+                height: 400px;
+            }
+            
+            .carousel-caption {
+                padding: 1rem;
+            }
+            
+            .carousel-caption h1 {
+                font-size: 1.8rem;
+            }
+            
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+            
+            .hero-fallback h1 {
+                font-size: 2rem;
+            }
+            
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .language-selector {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+            
+            .statistics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                padding: 0.75rem;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo" data-i18n-key="logo">
+                <i class="fas fa-robot me-2"></i>AI in <span>Public Finance</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n-key="nav.home"><i class="fas fa-home me-1"></i>Home</a></li>
+                    <li><a href="#applications" data-i18n-key="nav.applications"><i class="fas fa-cogs me-1"></i>Applications</a></li>
+                    <li><a href="#case-studies" data-i18n-key="nav.case_studies"><i class="fas fa-chart-line me-1"></i>Case Studies</a></li>
+                    <li><a href="#benefits-risks" data-i18n-key="nav.benefits_risks"><i class="fas fa-balance-scale me-1"></i>Benefits & Risks</a></li>
+                    <li><a href="#glossary" data-i18n-key="nav.glossary"><i class="fas fa-book me-1"></i>Glossary</a></li>
+                    <li><a href="#contact" data-i18n-key="nav.contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+                    <li><a href="privacy.html"><i class="fas fa-shield-alt me-1"></i>Privacy</a></li>
+                    <li>
+                        <div class="language-selector">
+                            <button class="lang-btn" onclick="applyTranslations('en')"><i class="fas fa-flag-usa"></i> EN</button>
+                            <button class="lang-btn" onclick="applyTranslations('pl')"><i class="fas fa-flag"></i> PL</button>
+                            <button class="lang-btn" onclick="applyTranslations('fr')"><i class="fas fa-flag"></i> FR</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="aiCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#aiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#aiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#aiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#aiCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="d-block w-100" alt="AI analyzing financial data visualization">
+                <div class="carousel-caption">
+                    <h2 class="display-4" data-i18n-key="carousel.slide1.title">AI in Public Finance: Transforming Government Financial Operations</h2>
+                    <p data-i18n-key="carousel.slide1.description">Exploring how AI technologies are revolutionizing government financial operations, from tax collection to budget forecasting and fraud detection with real-world case studies.</p>
+                    <a href="#applications" class="btn btn-primary" data-i18n-key="carousel.slide1.button"><i class="fas fa-rocket me-2"></i>Explore Applications</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" class="d-block w-100" alt="Tax collection and financial data analysis">
+                <div class="carousel-caption">
+                    <h2 class="display-4" data-i18n-key="carousel.slide2.title">47% Improved Fraud Detection Accuracy</h2>
+                    <p data-i18n-key="carousel.slide2.description">IRS AI implementation analyzes 240M tax returns annually with 47% higher fraud detection accuracy than traditional methods, identifying $2.8B in previously undetected fraud.</p>
+                    <a href="#case-studies" class="btn btn-primary" data-i18n-key="carousel.slide2.button"><i class="fas fa-chart-bar me-2"></i>View Case Studies</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-vector/low-poly-style-zero-one-binary-digit-tech-background_1017-52413.jpg?semt=ais_hybrid&w=740&q=80" class="d-block w-100" alt="Estonia digital government and AI implementation">
+                <div class="carousel-caption">
+                    <h2 class="display-4" data-i18n-key="carousel.slide3.title">95% Tax Declarations Auto-filled</h2>
+                    <p data-i18n-key="carousel.slide3.description">Estonia's digital tax system pre-fills 95% of declarations automatically, reducing administration costs by 75% while increasing compliance rates to 94%.</p>
+                    <a href="#case-studies" class="btn btn-primary" data-i18n-key="carousel.slide3.button"><i class="fas fa-brain me-2"></i>Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/745/248/large_2x/robot-working-with-digital-display-internet-connection-controlled-by-ai-robot-humanoid-code-html-programming-on-screen-laptop-programmer-development-computer-code-web-design-coding-technology-software-photo.jpg" class="d-block w-100" alt="Singapore predictive budgeting and AI forecasting">
+                <div class="carousel-caption">
+                    <h2 class="display-4" data-i18n-key="carousel.slide4.title">92% Budget Forecasting Accuracy</h2>
+                    <p data-i18n-key="carousel.slide4.description">Singapore's AI-driven predictive budgeting system analyzes 200+ economic indicators with 92% accuracy, reducing budget variance from 8.2% to just 1.7%.</p>
+                    <a href="#benefits-risks" class="btn btn-primary" data-i18n-key="carousel.slide4.button"><i class="fas fa-balance-scale me-2"></i>See Benefits & Risks</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#aiCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aiCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="modal fade" id="aiConsultationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="aiConsultationModalLabel" data-i18n-key="modal.title"><i class="fas fa-robot me-2"></i>Request AI Implementation Consultation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-4" data-i18n-key="modal.description">Fill out this form to request a consultation about AI implementation in your public finance operations. Our experts will contact you within 24 hours.</p>
+                    
+                    <form id="consultationForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label" data-i18n-key="modal.firstName"><i class="fas fa-user me-1"></i>First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label" data-i18n-key="modal.lastName"><i class="fas fa-user me-1"></i>Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label" data-i18n-key="modal.email"><i class="fas fa-envelope me-1"></i>Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="organization" class="form-label" data-i18n-key="modal.organization"><i class="fas fa-building me-1"></i>Organization</label>
+                            <input type="text" class="form-control" id="organization" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="country" class="form-label" data-i18n-key="modal.country"><i class="fas fa-globe me-1"></i>Country</label>
+                            <select class="form-select" id="country" required>
+                                <option value="" data-i18n-key="modal.selectCountry">Select a country</option>
+                                <option value="us">United States</option>
+                                <option value="pl">Poland</option>
+                                <option value="fr">France</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n-key="modal.interests"><i class="fas fa-star me-1"></i>Areas of Interest</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="fraud" id="interestFraud">
+                                <label class="form-check-label" for="interestFraud" data-i18n-key="modal.interestFraud">
+                                    Fraud Detection & Prevention
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="tax" id="interestTax">
+                                <label class="form-check-label" for="interestTax" data-i18n-key="modal.interestTax">
+                                    Tax Collection & Compliance
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="budget" id="interestBudget">
+                                <label class="form-check-label" for="interestBudget" data-i18n-key="modal.interestBudget">
+                                    Budget Forecasting & Planning
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="other" id="interestOther">
+                                <label class="form-check-label" for="interestOther" data-i18n-key="modal.interestOther">
+                                    Other AI Applications
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label" data-i18n-key="modal.message"><i class="fas fa-comment me-1"></i>Additional Information</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your specific needs or questions..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n-key="modal.close"><i class="fas fa-times me-2"></i>Close</button>
+                    <button type="button" class="btn btn-primary" onclick="submitConsultationForm()" data-i18n-key="modal.submit"><i class="fas fa-paper-plane me-2"></i>Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-light py-5 contact-section" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4" data-i18n-key="contact.title"><i class="fas fa-handshake me-2"></i>Get in Touch with Our AI Finance Experts</h2>
+                    <p class="lead mb-4" data-i18n-key="contact.description">
+                        Interested in implementing AI solutions in your public finance operations? Our team of experts is ready to help you transform your financial processes with cutting-edge artificial intelligence technologies.
+                    </p>
+                    
+                    <div class="mb-4">
+                        <h4 class="mb-3" data-i18n-key="contact.services"><i class="fas fa-cogs me-2"></i>Our Services</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent border-0 ps-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span data-i18n-key="contact.service1">AI Strategy & Implementation Planning</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 ps-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span data-i18n-key="contact.service2">Custom Fraud Detection Systems</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 ps-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span data-i18n-key="contact.service3">Predictive Budgeting Solutions</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 ps-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span data-i18n-key="contact.service4">Tax Collection Optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-envelope fs-4 text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-0" data-i18n-key="contact.emailTitle">Email Us</h5>
+                            <p class="mb-0">contact@aipublicfinance.org</p>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#aiConsultationModal" data-i18n-key="contact.consultation">
+                        <i class="fas fa-calendar-check me-2"></i>Request Free Consultation
+                    </button>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-lg">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0" data-i18n-key="contact.formTitle"><i class="fas fa-edit me-2"></i>Contact Form</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label" data-i18n-key="contact.name"><i class="fas fa-user me-1"></i>Full Name</label>
+                                    <input type="text" class="form-control" id="contactName" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label" data-i18n-key="contact.email"><i class="fas fa-at me-1"></i>Email Address</label>
+                                    <input type="email" class="form-control" id="contactEmail" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="contactSubject" class="form-label" data-i18n-key="contact.subject"><i class="fas fa-tag me-1"></i>Subject</label>
+                                    <select class="form-select" id="contactSubject" required>
+                                        <option value="" data-i18n-key="contact.selectSubject">Select a subject</option>
+                                        <option value="consultation" data-i18n-key="contact.optionConsultation">AI Implementation Consultation</option>
+                                        <option value="partnership" data-i18n-key="contact.optionPartnership">Partnership Inquiry</option>
+                                        <option value="technical" data-i18n-key="contact.optionTechnical">Technical Questions</option>
+                                        <option value="other" data-i18n-key="contact.optionOther">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label" data-i18n-key="contact.message"><i class="fas fa-comment-dots me-1"></i>Message</label>
+                                    <textarea class="form-control" id="contactMessage" rows="5" required data-i18n-key="contact.messagePlaceholder">Tell us how we can help with your public finance AI needs...</textarea>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary" data-i18n-key="contact.submit">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 faq-section" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-5" data-i18n-key="faq.title"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions</h2>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-i18n-key="faq.question1">
+                            <i class="fas fa-dollar-sign me-2"></i>How much does AI implementation in public finance typically cost?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" data-i18n-key="faq.answer1">
+                            Implementation costs vary based on scope and complexity. Basic fraud detection systems start around $50,000-$100,000, while comprehensive solutions like Estonia's tax system can cost $2-5 million. However, ROI is typically 200-400% within 2-3 years due to efficiency gains and fraud reduction.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-i18n-key="faq.question2">
+                            <i class="fas fa-clock me-2"></i>How long does it take to implement AI in public finance operations?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" data-i18n-key="faq.answer2">
+                            Implementation timelines range from 6 months for basic fraud detection modules to 2-3 years for comprehensive systems. The IRS AI system took 18 months for initial deployment. Key factors include data readiness, system integration complexity, and regulatory approvals.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-i18n-key="faq.question3">
+                            <i class="fas fa-shield-alt me-2"></i>What are the data security considerations for AI in public finance?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" data-i18n-key="faq.answer3">
+                            Data security is paramount. Our implementations use: 1) End-to-end encryption, 2) GDPR/CCPA compliance frameworks, 3) Regular security audits, 4) Anonymized data for training models, and 5) Multi-factor authentication. We ensure all systems meet or exceed government security standards.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-i18n-key="faq.question4">
+                            <i class="fas fa-balance-scale me-2"></i>Can AI systems in public finance be biased? How is this addressed?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" data-i18n-key="faq.answer4">
+                            Yes, AI can inherit biases from training data. We address this through: 1) Diverse training datasets, 2) Regular bias audits, 3) Human oversight layers, 4) Transparent algorithms, and 5) Continuous monitoring. Our systems achieve 99.5% fairness scores in independent audits.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-i18n-key="faq.question5">
+                            <i class="fas fa-graduation-cap me-2"></i>What training is required for staff to use AI systems?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body" data-i18n-key="faq.answer5">
+                            We provide comprehensive training programs: 1) Basic 2-day orientation for all staff, 2) Advanced 1-week training for power users, 3) Ongoing monthly workshops, and 4) 24/7 technical support. Most users become proficient within 2-4 weeks. Training is included in all implementation packages.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hero-fallback" id="home">
+        <div class="container">
+            <h1 data-i18n-key="hero.title">AI in Public Finance: Transforming Government Financial Operations</h1>
+            <p data-i18n-key="hero.description">Exploring how AI technologies are transforming government financial operations, from tax collection to budget forecasting and fraud detection with real-world case studies.</p>
+            <a href="#applications" class="btn" data-i18n-key="hero.button">Explore Applications</a>
+        </div>
+    </div>
+    <main class="container" id="main-content">
+        <div class="statistics-section">
+            <h2 class="sr-only">Key Statistics</h2>
+            <div class="statistics-grid">
+                <div class="stat-card fade-in-up">
+                    <div class="stat-value">47%</div>
+                    <div class="stat-label" data-i18n-key="stats.fraud"><i class="fas fa-shield-alt me-1"></i>Improved fraud detection accuracy</div>
+                    <small data-i18n-key="stats.fraud_source">IRS Implementation</small>
+                </div>
+                <div class="stat-card fade-in-up">
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label" data-i18n-key="stats.automation"><i class="fas fa-robot me-1"></i>Tax declarations auto-filled</div>
+                    <small data-i18n-key="stats.automation_source">Estonia Digital Tax</small>
+                </div>
+                <div class="stat-card fade-in-up">
+                    <div class="stat-value">92%</div>
+                    <div class="stat-label" data-i18n-key="stats.forecasting"><i class="fas fa-chart-line me-1"></i>Budget forecasting accuracy</div>
+                    <small data-i18n-key="stats.forecasting_source">Singapore Predictive Budgeting</small>
+                </div>
+            </div>
+        </div>
+        <section class="section" id="applications">
+            <h2 data-i18n-key="applications.title"><i class="fas fa-cogs me-2"></i>Key Applications of AI in Public Finance (2025 Update)</h2>
+            <p data-i18n-key="applications.description">AI technologies are being deployed across various areas of public finance to improve efficiency, accuracy, and decision-making.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 data-i18n-key="applications.fraud.title"><i class="fas fa-shield-alt me-2"></i>Fraud Detection</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n-key="applications.fraud.description">Machine learning algorithms analyze patterns in financial transactions to identify suspicious activities and potential fraud in real-time with up to 47% higher accuracy than traditional methods.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 data-i18n-key="applications.tax.title"><i class="fas fa-file-invoice-dollar me-2"></i>Tax Collection</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n-key="applications.tax.description">AI systems automate tax filing processes, identify non-compliance, and optimize collection strategies to increase revenue. Estonia's system auto-fills 95% of declarations.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 data-i18n-key="applications.budget.title"><i class="fas fa-chart-line me-2"></i>Budget Forecasting</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n-key="applications.budget.description">Predictive models analyze historical data and economic indicators to create more accurate budget projections and financial plans with 92% accuracy in Singapore's implementation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3 data-i18n-key="chart.title"><i class="fas fa-chart-bar me-2"></i>AI Use Cases in the European Public Sector by Policy Domain</h3>
+                <p data-i18n-key="chart.description">The following chart shows the distribution of AI applications across different policy domains in the European public sector:</p>
+                
+                <div class="chart">
+                    <div class="chart-bar" style="height: 80%;">
+                        <div class="chart-value">366</div>
+                    </div>
+                    <div class="chart-bar" style="height: 65%;">
+                        <div class="chart-value">223</div>
+                    </div>
+                    <div class="chart-bar" style="height: 52%;">
+                        <div class="chart-value">196</div>
+                    </div>
+                    <div class="chart-bar" style="height: 43%;">
+                        <div class="chart-value">142</div>
+                    </div>
+                    <div class="chart-bar" style="height: 33%;">
+                        <div class="chart-value">105</div>
+                    </div>
+                    <div class="chart-bar" style="height: 22%;">
+                        <div class="chart-value">88</div>
+                    </div>
+                    <div class="chart-bar" style="height: 13%;">
+                        <div class="chart-value">48</div>
+                    </div>
+                    <div class="chart-bar" style="height: 11%;">
+                        <div class="chart-value">44</div>
+                    </div>
+                    <div class="chart-bar" style="height: 7%;">
+                        <div class="chart-value">32</div>
+                    </div>
+                    <div class="chart-bar" style="height: 4%;">
+                        <div class="chart-value">9</div>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; text-align: center;">
+                    <div class="chart-label" data-i18n-key="chart.label1">General Public Services</div>
+                    <div class="chart-label" data-i18n-key="chart.label2">Economic Affairs</div>
+                    <div class="chart-label" data-i18n-key="chart.label3">Public Order & Safety</div>
+                    <div class="chart-label" data-i18n-key="chart.label4">Health</div>
+                    <div class="chart-label" data-i18n-key="chart.label5">Social Protection</div>
+                    <div class="chart-label" data-i18n-key="chart.label6">Environmental Protection</div>
+                    <div class="chart-label" data-i18n-key="chart.label7">Housing and community amenities</div>
+                    <div class="chart-label" data-i18n-key="chart.label8">Education</div>
+                    <div class="chart-label" data-i18n-key="chart.label9">Recreation, Culture & Religion</div>
+                    <div class="chart-label" data-i18n-key="chart.label10">Defence</div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="case-studies">
+            <h2 data-i18n-key="case_studies.title"><i class="fas fa-globe-americas me-2"></i>Real-World AI Public Finance Case Studies</h2>
+            <p data-i18n-key="case_studies.description">Real-world examples of governments successfully implementing AI in their financial operations.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; align-items: center;">
+                            <img class="flag-icon" src="https://flagcdn.com/w40/us.png" alt="USA Flag - IRS AI Implementation Case Study">
+                            <h3 data-i18n-key="case_studies.usa.title">United States: IRS AI Implementation</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n-key="case_studies.usa.description1">The United States Internal Revenue Service (IRS) has implemented sophisticated machine learning algorithms to combat tax fraud and evasion. The AI system analyzes over 240 million tax returns annually, identifying suspicious patterns and anomalies that indicate potential fraud. This system has reduced manual review time by 65% and increased fraud detection accuracy by 47% compared to traditional methods.</p>
+                        
+                        <p data-i18n-key="case_studies.usa.description2">The implementation uses natural language processing to analyze tax documents and predictive modeling to flag high-risk returns for audit. In the first year alone, this system identified $2.8 billion in previously undetected tax fraud.</p>
+                        
+                        <img src="https://cdn.britannica.com/42/93842-050-295D32A0/US-Capitol-place-meeting-Congress-Washington-DC.jpg" alt="Washington DC Capitol Building - Site of IRS AI implementation" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-top: 15px;" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; align-items: center;">
+                            <img class="flag-icon" src="https://flagcdn.com/w40/ee.png" alt="Estonia Flag - Digital Tax System Case Study">
+                            <h3 data-i18n-key="case_studies.estonia.title">Estonia: Digital Tax System</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n-key="case_studies.estonia.description1">Estonia's groundbreaking e-Tax and Customs Board system represents one of the most advanced digital governance implementations globally. The AI-powered platform pre-fills 95% of tax declarations automatically using data from employers, banks, and other government systems. Citizens can review and submit their tax returns in under three minutes, with 98% of returns filed electronically.</p>
+                        
+                        <p data-i18n-key="case_studies.estonia.description2">The system uses machine learning to detect errors and inconsistencies, reducing human processing errors by 82%. Estonia's approach has reduced tax administration costs by 75% while increasing compliance rates to 94%. The success of this system has made Estonia a global leader in digital governance.</p>
+                        
+                        <img src="https://content.tui.co.uk/adamtui/2022_1/31_15/b931d729-1153-4fbd-9d7d-ae2e0101a33b/LOC_002825_shutterstock_331780052WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)" alt="Tallinn, Estonia - Home of advanced digital tax system" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-top: 15px;" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; align-items: center;">
+                            <img class="flag-icon" src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag - Predictive Budgeting Case Study">
+                            <h3 data-i18n-key="case_studies.singapore.title">Singapore: Predictive Budgeting</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n-key="case_studies.singapore.description1">Singapore's Ministry of Finance has developed an AI-driven predictive budgeting system that has revolutionized public financial management. The system analyzes over 200 economic indicators, including GDP growth, inflation rates, trade data, and employment statistics to create highly accurate budget forecasts with 92% accuracy for the upcoming fiscal year.</p>
+                        
+                        <p data-i18n-key="case_studies.singapore.description2">The AI platform uses time-series analysis and machine learning to identify spending patterns across 16 government ministries, optimizing resource allocation and identifying potential budget inefficiencies. Since implementation, Singapore has reduced budget variance from 8.2% to 1.7% and improved fiscal planning efficiency by 45%.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Singapore Skyline - Hub of AI predictive budgeting innovation" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-top: 15px;" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="benefits-risks">
+            <h2 data-i18n-key="benefits_risks.title"><i class="fas fa-balance-scale me-2"></i>AI in Public Finance: 5 Major Benefits vs 5 Critical Risks</h2>
+            <p data-i18n-key="benefits_risks.description">While AI offers significant advantages for public finance, it also presents important challenges that must be addressed.</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header" style="background-color: var(--light-blue-bg);">
+                        <h3 data-i18n-key="benefits_risks.benefits.title"><i class="fas fa-thumbs-up me-2"></i>Benefits</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li data-i18n-key="benefits_risks.benefits.item1"><i class="fas fa-check-circle text-success me-2"></i>Increased operational efficiency</li>
+                            <li data-i18n-key="benefits_risks.benefits.item2"><i class="fas fa-check-circle text-success me-2"></i>Enhanced fraud detection capabilities (47% improvement)</li>
+                            <li data-i18n-key="benefits_risks.benefits.item3"><i class="fas fa-check-circle text-success me-2"></i>More accurate budget forecasting (92% accuracy)</li>
+                            <li data-i18n-key="benefits_risks.benefits.item4"><i class="fas fa-check-circle text-success me-2"></i>Reduced compliance costs (75% reduction in Estonia)</li>
+                            <li data-i18n-key="benefits_risks.benefits.item5"><i class="fas fa-check-circle text-success me-2"></i>Improved resource allocation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header" style="background-color: var(--light-blue-bg);">
+                        <h3 data-i18n-key="benefits_risks.risks.title"><i class="fas fa-exclamation-triangle me-2"></i>Risks</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li data-i18n-key="benefits_risks.risks.item1"><i class="fas fa-times-circle text-danger me-2"></i>Algorithmic bias in decision-making</li>
+                            <li data-i18n-key="benefits_risks.risks.item2"><i class="fas fa-times-circle text-danger me-2"></i>Data privacy and security concerns</li>
+                            <li data-i18n-key="benefits_risks.risks.item3"><i class="fas fa-times-circle text-danger me-2"></i>Lack of transparency in AI systems</li>
+                            <li data-i18n-key="benefits_risks.risks.item4"><i class="fas fa-times-circle text-danger me-2"></i>Workforce displacement concerns</li>
+                            <li data-i18n-key="benefits_risks.risks.item5"><i class="fas fa-times-circle text-danger me-2"></i>High implementation costs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="glossary">
+            <h2 data-i18n-key="glossary.title"><i class="fas fa-book me-2"></i>Glossary</h2>
+            <p data-i18n-key="glossary.description">Key terms and concepts related to AI in public finance.</p>
+            
+            <div class="glossary-container">
+                <div class="glossary-term">
+                    <h4 data-i18n-key="glossary.term1.title"><i class="fas fa-brain me-2"></i>Machine Learning</h4>
+                    <p data-i18n-key="glossary.term1.description">A subset of AI that enables systems to learn and improve from experience without explicit programming. Used in fraud detection with 47% accuracy improvement.</p>
+                </div>
+                
+                <div class="glossary-term">
+                    <h4 data-i18n-key="glossary.term2.title"><i class="fas fa-chart-line me-2"></i>Predictive Analytics</h4>
+                    <p data-i18n-key="glossary.term2.description">The use of data, statistical algorithms, and ML techniques to identify future outcomes based on historical data. Achieves 92% accuracy in Singapore's budget forecasting.</p>
+                </div>
+                
+                <div class="glossary-term">
+                    <h4 data-i18n-key="glossary.term3.title"><i class="fas fa-language me-2"></i>Natural Language Processing (NLP)</h4>
+                    <p data-i18n-key="glossary.term3.description">AI technology that enables computers to understand, interpret, and generate human language. Used by IRS to analyze tax documents.</p>
+                </div>
+                
+                <div class="glossary-term">
+                    <h4 data-i18n-key="glossary.term4.title"><i class="fas fa-balance-scale me-2"></i>Algorithmic Bias</h4>
+                    <p data-i18n-key="glossary.term4.description">Systematic errors in AI systems that create unfair outcomes, often favoring one group over others. A key risk in public finance AI implementations.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="mb-3" data-i18n-key="footer.logo">
+                        <i class="fas fa-robot me-2"></i>AI in <span class="text-warning">Public Finance</span>
+                    </h3>
+                    <p class="text-light" data-i18n-key="footer.description">
+                        Transforming government financial operations through cutting-edge artificial intelligence technologies. Making public finance more efficient, transparent, and effective.
+                    </p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-twitter fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-linkedin fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fab fa-github fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="fas fa-link me-2"></i>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-1"></i>Home</a></li>
+                        <li class="mb-2"><a href="#applications" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-1"></i>Applications</a></li>
+                        <li class="mb-2"><a href="#case-studies" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-1"></i>Case Studies</a></li>
+                        <li class="mb-2"><a href="ai-finance-summary.pdf" class="text-light text-decoration-none" target="_blank"><i class="fas fa-file-pdf me-1"></i>PDF Summary</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-1"></i>Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="fas fa-address-card me-2"></i>Contact Info</h5>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span>70-453, Aleja Papieża Jana Pawła II 22A, Szczecin</span>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <span>+48 123 456 789</span>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span>contact@aipublicfinance.org</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-3"><i class="fas fa-newspaper me-2"></i>Newsletter</h5>
+                    <p class="text-light mb-3" data-i18n-key="footer.newsletterDesc">
+                        Subscribe to get updates on AI in public finance.
+                    </p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+                        <button class="btn btn-primary" type="button" data-i18n-key="footer.subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0" data-i18n-key="footer.copyright">
+                        <i class="far fa-copyright me-1"></i> 2025 AI in Public Finance; Websites Design Project. All rights reserved.
+                    </p>
+                    <p class="mb-0 small">
+                        <a href="privacy.html" class="text-light text-decoration-none"><i class="fas fa-shield-alt me-1"></i>Privacy & GDPR Information</a>
+                    </p>
+                </div>
+                
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="sitemap.xml" class="text-light text-decoration-none me-3"><i class="fas fa-sitemap me-1"></i>Sitemap</a>
+                    <a href="privacy.html" class="text-light text-decoration-none me-3"><i class="fas fa-user-shield me-1"></i>Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none"><i class="fas fa-file-contract me-1"></i>Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const MESSAGES = {
+            en: {
+
+                'nav.contact': 'Contact',
+                'contact.title': 'Get in Touch with Our AI Finance Experts',
+                'contact.description': 'Interested in implementing AI solutions in your public finance operations? Our team of experts is ready to help you transform your financial processes with cutting-edge artificial intelligence technologies.',
+                'contact.services': 'Our Services',
+                'contact.service1': 'AI Strategy & Implementation Planning',
+                'contact.service2': 'Custom Fraud Detection Systems',
+                'contact.service3': 'Predictive Budgeting Solutions',
+                'contact.service4': 'Tax Collection Optimization',
+                'contact.emailTitle': 'Email Us',
+                'contact.consultation': 'Request Free Consultation',
+                'contact.formTitle': 'Contact Form',
+                'contact.name': 'Full Name',
+                'contact.email': 'Email Address',
+                'contact.subject': 'Subject',
+                'contact.selectSubject': 'Select a subject',
+                'contact.optionConsultation': 'AI Implementation Consultation',
+                'contact.optionPartnership': 'Partnership Inquiry',
+                'contact.optionTechnical': 'Technical Questions',
+                'contact.optionOther': 'Other',
+                'contact.message': 'Message',
+                'contact.messagePlaceholder': 'Tell us how we can help with your public finance AI needs...',
+                'contact.submit': 'Send Message',
+                
+                'modal.title': 'Request AI Implementation Consultation',
+                'modal.description': 'Fill out this form to request a consultation about AI implementation in your public finance operations. Our experts will contact you within 24 hours.',
+                'modal.firstName': 'First Name',
+                'modal.lastName': 'Last Name',
+                'modal.email': 'Email Address',
+                'modal.organization': 'Organization',
+                'modal.country': 'Country',
+                'modal.selectCountry': 'Select a country',
+                'modal.interests': 'Areas of Interest',
+                'modal.interestFraud': 'Fraud Detection & Prevention',
+                'modal.interestTax': 'Tax Collection & Compliance',
+                'modal.interestBudget': 'Budget Forecasting & Planning',
+                'modal.interestOther': 'Other AI Applications',
+                'modal.message': 'Additional Information',
+                'modal.close': 'Close',
+                'modal.submit': 'Submit Request',
+                
+                'faq.title': 'Frequently Asked Questions',
+                'faq.question1': 'How much does AI implementation in public finance typically cost?',
+                'faq.answer1': 'Implementation costs vary based on scope and complexity. Basic fraud detection systems start around $50,000-$100,000, while comprehensive solutions like Estonia\'s tax system can cost $2-5 million. However, ROI is typically 200-400% within 2-3 years due to efficiency gains and fraud reduction.',
+                'faq.question2': 'How long does it take to implement AI in public finance operations?',
+                'faq.answer2': 'Implementation timelines range from 6 months for basic fraud detection modules to 2-3 years for comprehensive systems. The IRS AI system took 18 months for initial deployment. Key factors include data readiness, system integration complexity, and regulatory approvals.',
+                'faq.question3': 'What are the data security considerations for AI in public finance?',
+                'faq.answer3': 'Data security is paramount. Our implementations use: 1) End-to-end encryption, 2) GDPR/CCPA compliance frameworks, 3) Regular security audits, 4) Anonymized data for training models, and 5) Multi-factor authentication. We ensure all systems meet or exceed government security standards.',
+                'faq.question4': 'Can AI systems in public finance be biased? How is this addressed?',
+                'faq.answer4': 'Yes, AI can inherit biases from training data. We address this through: 1) Diverse training datasets, 2) Regular bias audits, 3) Human oversight layers, 4) Transparent algorithms, and 5) Continuous monitoring. Our systems achieve 99.5% fairness scores in independent audits.',
+                'faq.question5': 'What training is required for staff to use AI systems?',
+                'faq.answer5': 'We provide comprehensive training programs: 1) Basic 2-day orientation for all staff, 2) Advanced 1-week training for power users, 3) Ongoing monthly workshops, and 4) 24/7 technical support. Most users become proficient within 2-4 weeks. Training is included in all implementation packages.',
+                
+                'footer.description': 'Transforming government financial operations through cutting-edge artificial intelligence technologies. Making public finance more efficient, transparent, and effective.',
+                'footer.quickLinks': 'Quick Links',
+                'footer.faq': 'FAQ',
+                'footer.contact': 'Contact Info',
+                'footer.address': '123 Innovation Drive, Tech City, TC 10101',
+                'footer.newsletter': 'Newsletter',
+                'footer.newsletterDesc': 'Subscribe to get updates on AI in public finance.',
+                'footer.subscribe': 'Subscribe',
+                'footer.privacy': 'Privacy Policy',
+                'footer.terms': 'Terms of Service',
+                
+                'carousel.slide1.title': 'AI in Public Finance: Transforming Government Financial Operations',
+                'carousel.slide1.description': 'Exploring how AI technologies are revolutionizing government financial operations, from tax collection to budget forecasting and fraud detection with real-world case studies.',
+                'carousel.slide1.button': 'Explore Applications',
+                'carousel.slide2.title': '47% Improved Fraud Detection Accuracy',
+                'carousel.slide2.description': 'IRS AI implementation analyzes 240M tax returns annually with 47% higher fraud detection accuracy than traditional methods, identifying $2.8B in previously undetected fraud.',
+                'carousel.slide2.button': 'View Case Studies',
+                'carousel.slide3.title': '95% Tax Declarations Auto-filled',
+                'carousel.slide3.description': 'Estonia\'s digital tax system pre-fills 95% of declarations automatically, reducing administration costs by 75% while increasing compliance rates to 94%.',
+                'carousel.slide3.button': 'Learn More',
+                'carousel.slide4.title': '92% Budget Forecasting Accuracy',
+                'carousel.slide4.description': 'Singapore\'s AI-driven predictive budgeting system analyzes 200+ economic indicators with 92% accuracy, reducing budget variance from 8.2% to just 1.7%.',
+                'carousel.slide4.button': 'See Benefits & Risks',
+                
+                'nav.home': 'Home',
+                'nav.applications': 'Applications',
+                'nav.case_studies': 'Case Studies',
+                'nav.benefits_risks': 'Benefits & Risks',
+                'nav.glossary': 'Glossary',
+                
+                'title': 'AI in Public Finance',
+                'logo': 'AI in <span>Public Finance</span>',
+                'hero.title': 'AI in Public Finance: Transforming Government Financial Operations',
+                'hero.description': 'Exploring how AI technologies are transforming government financial operations, from tax collection to budget forecasting and fraud detection with real-world case studies.',
+                'hero.button': 'Explore Applications',
+                
+                'stats.fraud': 'Improved fraud detection accuracy',
+                'stats.fraud_source': 'IRS Implementation',
+                'stats.automation': 'Tax declarations auto-filled',
+                'stats.automation_source': 'Estonia Digital Tax',
+                'stats.forecasting': 'Budget forecasting accuracy',
+                'stats.forecasting_source': 'Singapore Predictive Budgeting',
+                
+                'applications.title': 'Key Applications of AI in Public Finance (2025 Update)',
+                'applications.description': 'AI technologies are being deployed across various areas of public finance to improve efficiency, accuracy, and decision-making.',
+                'applications.fraud.title': 'Fraud Detection',
+                'applications.fraud.description': 'Machine learning algorithms analyze patterns in financial transactions to identify suspicious activities and potential fraud in real-time with up to 47% higher accuracy than traditional methods.',
+                'applications.tax.title': 'Tax Collection',
+                'applications.tax.description': 'AI systems automate tax filing processes, identify non-compliance, and optimize collection strategies to increase revenue. Estonia\'s system auto-fills 95% of declarations.',
+                'applications.budget.title': 'Budget Forecasting',
+                'applications.budget.description': 'Predictive models analyze historical data and economic indicators to create more accurate budget projections and financial plans with 92% accuracy in Singapore\'s implementation.',
+                
+                'chart.title': 'AI Use Cases in the European Public Sector by Policy Domain',
+                'chart.description': 'The following chart shows the distribution of AI applications across different policy domains in the European public sector:',
+                'chart.label1': 'General Public Services',
+                'chart.label2': 'Economic Affairs',
+                'chart.label3': 'Public Order & Safety',
+                'chart.label4': 'Health',
+                'chart.label5': 'Social Protection',
+                'chart.label6': 'Environmental Protection',
+                'chart.label7': 'Housing and community amenities',
+                'chart.label8': 'Education',
+                'chart.label9': 'Recreation, Culture & Religion',
+                'chart.label10': 'Defence',
+                
+                'case_studies.title': 'Real-World AI Public Finance Case Studies',
+                'case_studies.description': 'Real-world examples of governments successfully implementing AI in their financial operations.',
+                'case_studies.usa.title': 'United States: IRS AI Implementation',
+                'case_studies.usa.description1': 'The United States Internal Revenue Service (IRS) has implemented sophisticated machine learning algorithms to combat tax fraud and evasion. The AI system analyzes over 240 million tax returns annually, identifying suspicious patterns and anomalies that indicate potential fraud. This system has reduced manual review time by 65% and increased fraud detection accuracy by 47% compared to traditional methods.',
+                'case_studies.usa.description2': 'The implementation uses natural language processing to analyze tax documents and predictive modeling to flag high-risk returns for audit. In the first year alone, this system identified $2.8 billion in previously undetected tax fraud.',
+                'case_studies.estonia.title': 'Estonia: Digital Tax System',
+                'case_studies.estonia.description1': 'Estonia\'s groundbreaking e-Tax and Customs Board system represents one of the most advanced digital governance implementations globally. The AI-powered platform pre-fills 95% of tax declarations automatically using data from employers, banks, and other government systems. Citizens can review and submit their tax returns in under three minutes, with 98% of returns filed electronically.',
+                'case_studies.estonia.description2': 'The system uses machine learning to detect errors and inconsistencies, reducing human processing errors by 82%. Estonia\'s approach has reduced tax administration costs by 75% while increasing compliance rates to 94%. The success of this system has made Estonia a global leader in digital governance.',
+                'case_studies.singapore.title': 'Singapore: Predictive Budgeting',
+                'case_studies.singapore.description1': 'Singapore\'s Ministry of Finance has developed an AI-driven predictive budgeting system that has revolutionized public financial management. The system analyzes over 200 economic indicators, including GDP growth, inflation rates, trade data, and employment statistics to create highly accurate budget forecasts with 92% accuracy for the upcoming fiscal year.',
+                'case_studies.singapore.description2': 'The AI platform uses time-series analysis and machine learning to identify spending patterns across 16 government ministries, optimizing resource allocation and identifying potential budget inefficiencies. Since implementation, Singapore has reduced budget variance from 8.2% to 1.7% and improved fiscal planning efficiency by 45%.',
+                
+                'benefits_risks.title': 'AI in Public Finance: 5 Major Benefits vs 5 Critical Risks',
+                'benefits_risks.description': 'While AI offers significant advantages for public finance, it also presents important challenges that must be addressed.',
+                'benefits_risks.benefits.title': 'Benefits',
+                'benefits_risks.benefits.item1': 'Increased operational efficiency',
+                'benefits_risks.benefits.item2': 'Enhanced fraud detection capabilities (47% improvement)',
+                'benefits_risks.benefits.item3': 'More accurate budget forecasting (92% accuracy)',
+                'benefits_risks.benefits.item4': 'Reduced compliance costs (75% reduction in Estonia)',
+                'benefits_risks.benefits.item5': 'Improved resource allocation',
+                'benefits_risks.risks.title': 'Risks',
+                'benefits_risks.risks.item1': 'Algorithmic bias in decision-making',
+                'benefits_risks.risks.item2': 'Data privacy and security concerns',
+                'benefits_risks.risks.item3': 'Lack of transparency in AI systems',
+                'benefits_risks.risks.item4': 'Workforce displacement concerns',
+                'benefits_risks.risks.item5': 'High implementation costs',
+                
+                'glossary.title': 'Glossary',
+                'glossary.description': 'Key terms and concepts related to AI in public finance.',
+                'glossary.term1.title': 'Machine Learning',
+                'glossary.term1.description': 'A subset of AI that enables systems to learn and improve from experience without explicit programming. Used in fraud detection with 47% accuracy improvement.',
+                'glossary.term2.title': 'Predictive Analytics',
+                'glossary.term2.description': 'The use of data, statistical algorithms, and ML techniques to identify future outcomes based on historical data. Achieves 92% accuracy in Singapore\'s budget forecasting.',
+                'glossary.term3.title': 'Natural Language Processing (NLP)',
+                'glossary.term3.description': 'AI technology that enables computers to understand, interpret, and generate human language. Used by IRS to analyze tax documents.',
+                'glossary.term4.title': 'Algorithmic Bias',
+                'glossary.term4.description': 'Systematic errors in AI systems that create unfair outcomes, often favoring one group over others. A key risk in public finance AI implementations.',
+                
+                'footer.logo': 'AI in <span>Public Finance</span>',
+                'footer.home': 'Home',
+                'footer.applications': 'Applications',
+                'footer.case_studies': 'Case Studies',
+                'footer.benefits_risks': 'Benefits & Risks',
+                'footer.glossary': 'Glossary',
+                'footer.copyright': '© 2025 AI in Public Finance; Websites Design Project. All rights reserved.'
+            },
+            pl: {
+                'nav.contact': 'Kontakt',
+                'contact.title': 'Skontaktuj się z naszymi ekspertami AI ds. Finansów',
+                'contact.description': 'Zainteresowany wdrożeniem rozwiązań AI w swoich operacjach finansów publicznych? Nasz zespół ekspertów jest gotowy pomóc Ci przekształcić procesy finansowe za pomocą najnowocześniejszych technologii sztucznej inteligencji.',
+                'contact.services': 'Nasze Usługi',
+                'contact.service1': 'Strategia AI & Planowanie Wdrożenia',
+                'contact.service2': 'Niestandardowe Systemy Wykrywania Oszustw',
+                'contact.service3': 'Rozwiązania Predykcyjnego Budżetowania',
+                'contact.service4': 'Optymalizacja Poboru Podatków',
+                'contact.emailTitle': 'Wyślij do nas e-mail',
+                'contact.consultation': 'Zamów Bezpłatną Konsultację',
+                'contact.formTitle': 'Formularz Kontaktowy',
+                'contact.name': 'Pełne imię i nazwisko',
+                'contact.email': 'Adres e-mail',
+                'contact.subject': 'Temat',
+                'contact.selectSubject': 'Wybierz temat',
+                'contact.optionConsultation': 'Konsultacja wdrożenia AI',
+                'contact.optionPartnership': 'Zapytanie o współpracę',
+                'contact.optionTechnical': 'Pytania techniczne',
+                'contact.optionOther': 'Inne',
+                'contact.message': 'Wiadomość',
+                'contact.messagePlaceholder': 'Powiedz nam, jak możemy pomóc w Twoich potrzebach związanych z AI w finansach publicznych...',
+                'contact.submit': 'Wyślij wiadomość',
+                
+                'modal.title': 'Zamów Konsultację Wdrożenia AI',
+                'modal.description': 'Wypełnij ten formularz, aby zamówić konsultację dotyczącą wdrożenia AI w operacjach finansów publicznych. Nasi eksperci skontaktują się z Tobą w ciągu 24 godzin.',
+                'modal.firstName': 'Imię',
+                'modal.lastName': 'Nazwisko',
+                'modal.email': 'Adres e-mail',
+                'modal.organization': 'Organizacja',
+                'modal.country': 'Kraj',
+                'modal.selectCountry': 'Wybierz kraj',
+                'modal.interests': 'Obszary zainteresowań',
+                'modal.interestFraud': 'Wykrywanie i zapobieganie oszustwom',
+                'modal.interestTax': 'Pobór podatków i zgodność',
+                'modal.interestBudget': 'Prognozowanie i planowanie budżetu',
+                'modal.interestOther': 'Inne zastosowania AI',
+                'modal.message': 'Dodatkowe informacje',
+                'modal.close': 'Zamknij',
+                'modal.submit': 'Wyślij zapytanie',
+                
+                'faq.title': 'Często Zadawane Pytania',
+                'faq.question1': 'Ile zazwyczaj kosztuje wdrożenie AI w finansach publicznych?',
+                'faq.answer1': 'Koszty wdrożenia zależą od zakresu i złożoności. Podstawowe systemy wykrywania oszustw zaczynają się od około 50 000-100 000 $, podczas gdy kompleksowe rozwiązania, takie jak system podatkowy Estonii, mogą kosztować 2-5 milionów $. Jednak ROI zazwyczaj wynosi 200-400% w ciągu 2-3 lat dzięki zwiększonej efektywności i redukcji oszustw.',
+                'faq.question2': 'Ile czasu zajmuje wdrożenie AI w operacjach finansów publicznych?',
+                'faq.answer2': 'Czasy wdrożenia wahają się od 6 miesięcy dla podstawowych modułów wykrywania oszustw do 2-3 lat dla kompleksowych systemów. System AI IRS wymagał 18 miesięcy do początkowego wdrożenia. Kluczowymi czynnikami są gotowość danych, złożoność integracji systemów i zatwierdzenia regulacyjne.',
+                'faq.question3': 'Jakie są kwestie bezpieczeństwa danych dla AI w finansach publicznych?',
+                'faq.answer3': 'Bezpieczeństwo danych jest najważniejsze. Nasze wdrożenia wykorzystują: 1) Szyfrowanie end-to-end, 2) Ramy zgodności GDPR/CCPA, 3) Regularne audyty bezpieczeństwa, 4) Anonimizowane dane do trenowania modeli, i 5) Uwierzytelnianie wieloskładnikowe. Zapewniamy, że wszystkie systemy spełniają lub przekraczają standardy bezpieczeństwa rządu.',
+                'faq.question4': 'Czy systemy AI w finansach publicznych mogą być tendencyjne? Jak to się rozwiązuje?',
+                'faq.answer4': 'Tak, AI może dziedziczyć uprzedzenia z danych treningowych. Rozwiązujemy to poprzez: 1) Zróżnicowane zbiory danych treningowych, 2) Regularne audyty uprzedzeń, 3) Warstwy nadzoru ludzkiego, 4) Przejrzyste algorytmy, i 5) Ciągłe monitorowanie. Nasze systemy osiągają 99,5% wyników uczciwości w niezależnych audytach.',
+                'faq.question5': 'Jakie szkolenia są wymagane dla personelu do korzystania z systemów AI?',
+                'faq.answer5': 'Zapewniamy kompleksowe programy szkoleniowe: 1) Podstawową 2-dniową orientację dla całego personelu, 2) Zaawansowane 1-tygodniowe szkolenie dla zaawansowanych użytkowników, 3) Ciągłe comiesięczne warsztaty, i 4) 24/7 wsparcie techniczne. Większość użytkowników staje się biegła w ciągu 2-4 tygodni. Szkolenie jest wliczone we wszystkie pakiety wdrożeniowe.',
+                
+                'footer.description': 'Przekształcanie operacji finansowych rządu poprzez najnowocześniejsze technologie sztucznej inteligencji. Uczynienie finansów publicznych bardziej efektywnymi, przejrzystymi i skutecznymi.',
+                'footer.quickLinks': 'Szybkie linki',
+                'footer.faq': 'FAQ',
+                'footer.contact': 'Informacje kontaktowe',
+                'footer.address': 'Ulica Innowacji 123, Miasto Tech, TC 10101',
+                'footer.newsletter': 'Newsletter',
+                'footer.newsletterDesc': 'Zasubskrybuj, aby otrzymywać aktualizacje o AI w finansach publicznych.',
+                'footer.subscribe': 'Subskrybuj',
+                'footer.privacy': 'Polityka prywatności',
+                'footer.terms': 'Warunki usługi',
+                
+                'carousel.slide1.title': 'AI w Finansach Publicznych: Transformacja Operacji Finansowych Rządu',
+                'carousel.slide1.description': 'Badanie, jak technologie AI przekształcają operacje finansowe rządu, od poboru podatków po prognozowanie budżetu i wykrywanie oszustw z rzeczywistymi przykładami.',
+                'carousel.slide1.button': 'Poznaj Zastosowania',
+                'carousel.slide2.title': '47% Poprawiona Dokładność Wykrywania Oszustw',
+                'carousel.slide2.description': 'Implementacja AI IRS analizuje 240M zeznań podatkowych rocznie z 47% wyższą dokładnością wykrywania oszustw niż tradycyjne metody, identyfikując 2,8 mld $ wcześniej niewykrytych oszustw.',
+                'carousel.slide2.button': 'Zobacz Przykłady',
+                'carousel.slide3.title': '95% Deklaracji Podatkowych Automatycznie Wypełnianych',
+                'carousel.slide3.description': 'Cyfrowy system podatkowy Estonii automatycznie wypełnia 95% deklaracji, zmniejszając koszty administracji o 75% przy jednoczesnym zwiększeniu wskaźników zgodności do 94%.',
+                'carousel.slide3.button': 'Dowiedz się Więcej',
+                'carousel.slide4.title': '92% Dokładność Prognozowania Budżetu',
+                'carousel.slide4.description': 'System predykcyjnego budżetowania Singapuru napędzany AI analizuje 200+ wskaźników ekonomicznych z 92% dokładnością, zmniejszając wariancję budżetową z 8,2% do zaledwie 1,7%.',
+                'carousel.slide4.button': 'Zobacz Zalety i Ryzyka',
+                
+                'nav.home': 'Strona główna',
+                'nav.applications': 'Zastosowania',
+                'nav.case_studies': 'Przykłady',
+                'nav.benefits_risks': 'Zalety i ryzyka',
+                'nav.glossary': 'Słownik',
+                
+                'title': 'AI w Finansach Publicznych',
+                'logo': 'AI w <span>Finansach Publicznych</span>',
+                'hero.title': 'AI w Finansach Publicznych: Transformacja Operacji Finansowych Rządu',
+                'hero.description': 'Badanie, jak technologie AI przekształcają operacje finansowe rządu, od poboru podatków po prognozowanie budżetu i wykrywanie oszustw z rzeczywistymi przykładami.',
+                'hero.button': 'Poznaj Zastosowania',
+                
+                'stats.fraud': 'Poprawiona dokładność wykrywania oszustw',
+                'stats.fraud_source': 'Implementacja IRS',
+                'stats.automation': 'Deklaracje podatkowe wypełniane automatycznie',
+                'stats.automation_source': 'Estonia Digital Tax',
+                'stats.forecasting': 'Dokładność prognozowania budżetu',
+                'stats.forecasting_source': 'Singapur Predykcyjne Budżetowanie',
+                
+                'applications.title': 'Kluczowych Zastosowań AI w Finansach Publicznych (Aktualizacja 2025)',
+                'applications.description': 'Technologie AI są wdrażane w różnych obszarach finansów publicznych w celu poprawy efektywności, dokładności i podejmowania decyzji.',
+                'applications.fraud.title': 'Wykrywanie Oszustw',
+                'applications.fraud.description': 'Algorytmy uczenia maszynowego analizują wzorce transakcji finansowych w czasie rzeczywistym, identyfikując podejrzane działania i potencjalne oszustwa z dokładnością o 47% wyższą niż tradycyjne metody.',
+                'applications.tax.title': 'Pobór Podatków',
+                'applications.tax.description': 'Systemy AI automatyzują procesy deklaracji podatkowych, identyfikują niezgodności i optymalizują strategie poboru, zwiększając przychody. System Estonii automatycznie wypełnia 95% deklaracji.',
+                'applications.budget.title': 'Prognozowanie Budżetu',
+                'applications.budget.description': 'Modele predykcyjne analizują dane historyczne i wskaźniki ekonomiczne, tworząc dokładniejsze prognozy budżetowe i plany finansowe z 92% dokładnością w implementacji Singapuru.',
+                
+                'chart.title': 'Przykłady Wykorzystania AI w Sektorze Publicznym UE według Obszarów Polityki',
+                'chart.description': 'Poniższy wykres przedstawia rozkład zastosowań AI w różnych obszarach polityki w europejskim sektorze publicznym:',
+                'chart.label1': 'Ogólne Usługi Publiczne',
+                'chart.label2': 'Sprawy Gospodarcze',
+                'chart.label3': 'Porządek i Bezpieczeństwo Publiczne',
+                'chart.label4': 'Zdrowie',
+                'chart.label5': 'Ochrona Socjalna',
+                'chart.label6': 'Ochrona Środowiska',
+                'chart.label7': 'Mieszkalnictwo i Infrastruktura Komunalna',
+                'chart.label8': 'Edukacja',
+                'chart.label9': 'Rekreacja, Kultura i Religia',
+                'chart.label10': 'Obrona',
+                
+                'case_studies.title': 'Rzeczywiste Przykłady AI w Finansach Publicznych',
+                'case_studies.description': 'Rzeczywiste przykłady rządów skutecznie wdrażających AI w operacjach finansowych.',
+                'case_studies.usa.title': 'Stany Zjednoczone: Implementacja AI w IRS',
+                'case_studies.usa.description1': 'Amerykańska Służba Podatkowa (IRS) wdrożyła zaawansowane algorytmy uczenia maszynowego do walki z oszustwami podatkowymi. System AI analizuje ponad 240 milionów zeznań podatkowych rocznie, identyfikując podejrzane wzorce i anomalie wskazujące na potencjalne oszustwa. System ten zmniejszył czas ręcznego przeglądu o 65% i zwiększył dokładność wykrywania oszustw o 47% w porównaniu z tradycyjnymi metodami.',
+                'case_studies.usa.description2': 'Implementacja wykorzystuje przetwarzanie języka naturalnego do analizy dokumentów podatkowych i modelowanie predykcyjne do oznaczania wysokiego ryzyka audytów. W samym pierwszym roku system ten zidentyfikował 2,8 miliarda dolarów wcześniej niewykrytych oszustw podatkowych.',
+                'case_studies.estonia.title': 'Estonia: Cyfrowy System Podatkowy',
+                'case_studies.estonia.description1': 'Przełomowy system e-Tax and Customs Board Estonii reprezentuje jedno z najbardziej zaawansowanych wdrożeń cyfrowego rządu na świecie. Platforma zasilana AI automatycznie wypełnia 95% deklaracji podatkowych, wykorzystując dane od pracodawców, banków i innych systemów rządowych. Obywatele mogą przejrzeć i złożyć swoje zeznania podatkowe w ciągu trzech minut, przy 98% zeznań składanych elektronicznie.',
+                'case_studies.estonia.description2': 'System wykorzystuje uczenie maszynowe do wykrywania błędów i niespójności, zmniejszając błędy przetwarzania przez ludzi o 82%. Podejście Estonii zmniejszyło koszty administracji podatkowej o 75%, jednocześnie zwiększając wskaźniki zgodności do 94%. Sukces tego systemu uczynił Estonię światowym liderem w zakresie zarządzania cyfrowego.',
+                'case_studies.singapore.title': 'Singapur: Predykcyjne Budżetowanie',
+                'case_studies.singapore.description1': 'Ministerstwo Finansów Singapuru opracowało system predykcyjnego budżetowania napędzany AI, który zrewolucjonizował zarządzanie finansami publicznymi. System analizuje ponad 200 wskaźników ekonomicznych, w tym wzrost PKB, stopy inflacji, dane handlowe i statystyki zatrudnienia, aby tworzyć wysoce dokładne prognozy budżetowe z 92% dokładnością na nadchodzący rok podatkowy.',
+                'case_studies.singapore.description2': 'Platforma AI wykorzystuje analizę szeregów czasowych i uczenie maszynowe do identyfikacji wzorców wydatków w 16 ministerstwach rządowych, optymalizując alokację zasobów i identyfikując potencjalne nieefektywności budżetowe. Od czasu wdrożenia Singapur zmniejszył wariancję budżetową z 8,2% do 1,7% i poprawił efektywność planowania fiskalnego o 45%.',
+                
+                'benefits_risks.title': 'AI w Finansach Publicznych: 5 Głównych Zalet vs 5 Krytycznych Ryzyk',
+                'benefits_risks.description': 'Chociaż AI oferuje znaczące korzyści dla finansów publicznych, to również stwarza ważne wyzwania, które należy rozwiązać.',
+                'benefits_risks.benefits.title': 'Zalety',
+                'benefits_risks.benefits.item1': 'Zwiększona efektywność operacyjna',
+                'benefits_risks.benefits.item2': 'Ulepszone możliwości wykrywania oszustw (47% poprawy)',
+                'benefits_risks.benefits.item3': 'Dokładniejsze prognozowanie budżetu (92% dokładności)',
+                'benefits_risks.benefits.item4': 'Zmniejszone koszty zgodności (75% redukcji w Estonii)',
+                'benefits_risks.benefits.item5': 'Ulepszona alokacja zasobów',
+                'benefits_risks.risks.title': 'Ryzyka',
+                'benefits_risks.risks.item1': 'Uprzedzenia algorytmiczne w podejmowaniu decyzji',
+                'benefits_risks.risks.item2': 'Obawy dotyczące prywatności i bezpieczeństwa danych',
+                'benefits_risks.risks.item3': 'Brak przejrzystości w systemach AI',
+                'benefits_risks.risks.item4': 'Obawy dotyczące zastępowania siły roboczej',
+                'benefits_risks.risks.item5': 'Wysokie koszty implementacji',
+                
+                'glossary.title': 'Słownik',
+                'glossary.description': 'Kluczowe terminy i koncepcje związane z AI w finansach publicznych.',
+                'glossary.term1.title': 'Uczenie Maszynowe',
+                'glossary.term1.description': 'Podzbiór AI, który umożliwia systemom uczenie się i doskonalenie na podstawie doświadczenia bez wyraźnego programowania. Używane w wykrywaniu oszustw z 47% poprawą dokładności.',
+                'glossary.term2.title': 'Analityka Predykcyjna',
+                'glossary.term2.description': 'Wykorzystanie danych, algorytmów statystycznych i technik ML do identyfikacji przyszłych wyników na podstawie danych historycznych. Osiąga 92% dokładności w prognozowaniu budżetu Singapuru.',
+                'glossary.term3.title': 'Przetwarzanie Języka Naturalnego (NLP)',
+                'glossary.term3.description': 'Technologia AI, która umożliwia komputerom rozumienie, interpretację i generowanie języka ludzkiego. Używane przez IRS do analizy dokumentów podatkowych.',
+                'glossary.term4.title': 'Uprzedzenia Algorytmiczne',
+                'glossary.term4.description': 'Systematyczne błędy w systemach AI, które tworzą niesprawiedliwe wyniki, często faworyzując jedną grupę nad innymi. Kluczowe ryzyko we wdrożeniach AI w finansach publicznych.',
+                
+                'footer.logo': 'AI w <span>Finansach Publicznych</span>',
+                'footer.home': 'Strona główna',
+                'footer.applications': 'Zastosowania',
+                'footer.case_studies': 'Przykłady',
+                'footer.benefits_risks': 'Zalety i ryzyka',
+                'footer.glossary': 'Słownik',
+                'footer.copyright': '© 2025 AI w Finansach Publicznych; Projekt Projektowania Stron Internetowych. Wszelkie prawa zastrzeżone.'
+            },
+            fr: {
+                'nav.contact': 'Contact',
+                'contact.title': 'Contactez nos experts en IA financière',
+                'contact.description': 'Intéressé par la mise en œuvre de solutions d\'IA dans vos opérations de finances publiques? Notre équipe d\'experts est prête à vous aider à transformer vos processus financiers avec les technologies d\'intelligence artificielle les plus avancées.',
+                'contact.services': 'Nos Services',
+                'contact.service1': 'Stratégie IA & Planification de mise en œuvre',
+                'contact.service2': 'Systèmes de détection de fraude personnalisés',
+                'contact.service3': 'Solutions de budgétisation prédictive',
+                'contact.service4': 'Optimisation de la collecte des impôts',
+                'contact.emailTitle': 'Envoyez-nous un e-mail',
+                'contact.consultation': 'Demander une consultation gratuite',
+                'contact.formTitle': 'Formulaire de contact',
+                'contact.name': 'Nom complet',
+                'contact.email': 'Adresse e-mail',
+                'contact.subject': 'Sujet',
+                'contact.selectSubject': 'Sélectionnez un sujet',
+                'contact.optionConsultation': 'Consultation de mise en œuvre IA',
+                'contact.optionPartnership': 'Demande de partenariat',
+                'contact.optionTechnical': 'Questions techniques',
+                'contact.optionOther': 'Autre',
+                'contact.message': 'Message',
+                'contact.messagePlaceholder': 'Dites-nous comment nous pouvons vous aider avec vos besoins en IA pour les finances publiques...',
+                'contact.submit': 'Envoyer le message',
+                
+                'modal.title': 'Demander une consultation de mise en œuvre IA',
+                'modal.description': 'Remplissez ce formulaire pour demander une consultation sur la mise en œuvre d\'IA dans vos opérations de finances publiques. Nos experts vous contacteront dans les 24 heures.',
+                'modal.firstName': 'Prénom',
+                'modal.lastName': 'Nom',
+                'modal.email': 'Adresse e-mail',
+                'modal.organization': 'Organisation',
+                'modal.country': 'Pays',
+                'modal.selectCountry': 'Sélectionnez un pays',
+                'modal.interests': 'Domaines d\'intérêt',
+                'modal.interestFraud': 'Détection et prévention de la fraude',
+                'modal.interestTax': 'Collecte et conformité fiscales',
+                'modal.interestBudget': 'Prévision et planification budgétaire',
+                'modal.interestOther': 'Autres applications d\'IA',
+                'modal.message': 'Informations supplémentaires',
+                'modal.close': 'Fermer',
+                'modal.submit': 'Soumettre la demande',
+                
+                'faq.title': 'Foire aux questions',
+                'faq.question1': 'Combien coûte généralement la mise en œuvre de l\'IA dans les finances publiques?',
+                'faq.answer1': 'Les coûts de mise en œuvre varient en fonction de la portée et de la complexité. Les systèmes de détection de fraude de base commencent autour de 50 000 à 100 000 $, tandis que les solutions complètes comme le système fiscal de l\'Estonie peuvent coûter 2 à 5 millions de dollars. Cependant, le ROI est généralement de 200 à 400 % dans les 2 à 3 ans grâce aux gains d\'efficacité et à la réduction de la fraude.',
+                'faq.question2': 'Combien de temps faut-il pour mettre en œuvre l\'IA dans les opérations de finances publiques?',
+                'faq.answer2': 'Les délais de mise en œuvre vont de 6 mois pour les modules de base de détection de fraude à 2-3 ans pour les systèmes complets. Le système d\'IA de l\'IRS a pris 18 mois pour le déploiement initial. Les facteurs clés incluent la préparation des données, la complexité de l\'intégration du système et les approbations réglementaires.',
+                'faq.question3': 'Quelles sont les considérations de sécurité des données pour l\'IA dans les finances publiques?',
+                'faq.answer3': 'La sécurité des données est primordiale. Nos mises en œuvre utilisent : 1) Un cryptage de bout en bout, 2) Des cadres de conformité GDPR/CCPA, 3) Des audits de sécurité réguliers, 4) Des données anonymisées pour la formation des modèles, et 5) Une authentification multifacteur. Nous nous assurons que tous les systèmes répondent ou dépassent les normes de sécurité gouvernementales.',
+                'faq.question4': 'Les systèmes d\'IA dans les finances publiques peuvent-ils être biaisés ? Comment cela est-il abordé?',
+                'faq.answer4': 'Oui, l\'IA peut hériter des biais des données de formation. Nous abordons cela grâce à : 1) Des ensembles de données de formation diversifiés, 2) Des audits de biais réguliers, 3) Des couches de supervision humaine, 4) Des algorithmes transparents, et 5) Une surveillance continue. Nos systèmes atteignent des scores d\'équité de 99,5 % lors d\'audits indépendants.',
+                'faq.question5': 'Quelle formation est requise pour le personnel pour utiliser les systèmes d\'IA?',
+                'faq.answer5': 'Nous fournissons des programmes de formation complets : 1) Orientation de base de 2 jours pour tout le personnel, 2) Formation avancée d\'une semaine pour les utilisateurs avancés, 3) Ateliers mensuels continus, et 4) Support technique 24/7. La plupart des utilisateurs deviennent compétents en 2 à 4 semaines. La formation est incluse dans tous les forfaits de mise en œuvre.',
+                
+                'footer.description': 'Transformer les opérations financières gouvernementales grâce aux technologies d\'intelligence artificielle de pointe. Rendre les finances publiques plus efficaces, transparentes et efficaces.',
+                'footer.quickLinks': 'Liens rapides',
+                'footer.faq': 'FAQ',
+                'footer.contact': 'Informations de contact',
+                'footer.address': '123 Innovation Drive, Tech City, TC 10101',
+                'footer.newsletter': 'Newsletter',
+                'footer.newsletterDesc': 'Abonnez-vous pour recevoir des mises à jour sur l\'IA dans les finances publiques.',
+                'footer.subscribe': 'S\'abonner',
+                'footer.privacy': 'Politique de confidentialité',
+                'footer.terms': 'Conditions de service',
+                
+                'carousel.slide1.title': 'IA dans les Finances Publiques : Transformation des Opérations Financières Gouvernementales',
+                'carousel.slide1.description': 'Explorer comment les technologies d\'IA révolutionnent les opérations financières gouvernementales, de la collecte des impôts à la prévision budgétaire et à la détection des fraudes avec des études de cas réelles.',
+                'carousel.slide1.button': 'Explorer les applications',
+                'carousel.slide2.title': '47% Amélioration de la précision de détection des fraudes',
+                'carousel.slide2.description': 'La mise en œuvre de l\'IA de l\'IRS analyse 240 millions de déclarations de revenus annuellement avec une précision de détection des fraudes supérieure de 47 % aux méthodes traditionnelles, identifiant 2,8 milliards de dollars de fraude précédemment non détectée.',
+                'carousel.slide2.button': 'Voir les études de cas',
+                'carousel.slide3.title': '95% Déclarations fiscales pré-remplies automatiquement',
+                'carousel.slide3.description': 'Le système fiscal numérique de l\'Estonie pré-remplit automatiquement 95 % des déclarations, réduisant les coûts d\'administration de 75 % tout en augmentant les taux de conformité à 94 %.',
+                'carousel.slide3.button': 'En savoir plus',
+                'carousel.slide4.title': '92% Précision de prévision budgétaire',
+                'carousel.slide4.description': 'Le système de budgétisation prédictive de Singapour alimenté par l\'IA analyse 200+ indicateurs économiques avec une précision de 92 %, réduisant l\'écart budgétaire de 8,2 % à seulement 1,7 %.',
+                'carousel.slide4.button': 'Voir les avantages et les risques',
+                
+                'nav.home': 'Accueil',
+                'nav.applications': 'Applications',
+                'nav.case_studies': 'Études de cas',
+                'nav.benefits_risks': 'Avantages et risques',
+                'nav.glossary': 'Glossaire',
+                
+                'title': 'IA dans les Finances Publiques',
+                'logo': 'IA dans <span>les Finances Publiques</span>',
+                'hero.title': 'IA dans les Finances Publiques : Transformation des Opérations Financières Gouvernementales',
+                'hero.description': 'Explorer comment les technologies d\'IA transforment les opérations financières gouvernementales, de la collecte des impôts à la prévision budgétaire et à la détection des fraudes avec des études de cas réelles.',
+                'hero.button': 'Explorer les applications',
+                
+                'stats.fraud': 'Précision améliorée de détection des fraudes',
+                'stats.fraud_source': 'Mise en œuvre IRS',
+                'stats.automation': 'Déclarations fiscales pré-remplies automatiquement',
+                'stats.automation_source': 'Taxe numérique Estonie',
+                'stats.forecasting': 'Précision de prévision budgétaire',
+                'stats.forecasting_source': 'Budgétisation prédictive Singapour',
+                
+                'applications.title': 'Applications clés de l\'IA dans les finances publiques (Mise à jour 2025)',
+                'applications.description': 'Les technologies d\'IA sont déployées dans divers domaines des finances publiques pour améliorer l\'efficacité, la précision et la prise de décision.',
+                'applications.fraud.title': 'Détection de fraude',
+                'applications.fraud.description': 'Les algorithmes d\'apprentissage automatique analysent les modèles de transactions financières pour identifier les activités suspectes et les fraudes potentielles en temps réel avec une précision jusqu\'à 47 % supérieure aux méthodes traditionnelles.',
+                'applications.tax.title': 'Collecte des impôts',
+                'applications.tax.description': 'Les systèmes d\'IA automatisent les processus de déclaration fiscale, identifient la non-conformité et optimisent les stratégies de collecte pour augmenter les recettes. Le système de l\'Estonie pré-remplit automatiquement 95 % des déclarations.',
+                'applications.budget.title': 'Prévision budgétaire',
+                'applications.budget.description': 'Les modèles prédictifs analysent les données historiques et les indicateurs économiques pour créer des projections budgétaires et des plans financiers plus précis avec 92 % de précision dans la mise en œuvre de Singapour.',
+                
+                'chart.title': 'Cas d\'utilisation de l\'IA dans le secteur public européen par domaine politique',
+                'chart.description': 'Le graphique suivant montre la répartition des applications d\'IA dans différents domaines politiques du secteur public européen :',
+                'chart.label1': 'Services publics généraux',
+                'chart.label2': 'Affaires économiques',
+                'chart.label3': 'Ordre et sécurité publics',
+                'chart.label4': 'Santé',
+                'chart.label5': 'Protection sociale',
+                'chart.label6': 'Protection de l\'environnement',
+                'chart.label7': 'Logement et équipements collectifs',
+                'chart.label8': 'Éducation',
+                'chart.label9': 'Loisirs, culture et religion',
+                'chart.label10': 'Défense',
+                
+                'case_studies.title': 'Études de cas réelles d\'IA dans les finances publiques',
+                'case_studies.description': 'Exemples réels de gouvernements mettant en œuvre avec succès l\'IA dans leurs opérations financières.',
+                'case_studies.usa.title': 'États-Unis : Mise en œuvre de l\'IA de l\'IRS',
+                'case_studies.usa.description1': 'Le Service des impôts des États-Unis (IRS) a mis en œuvre des algorithmes sophistiqués d\'apprentissage automatique pour lutter contre la fraude et l\'évasion fiscales. Le système d\'IA analyse plus de 240 millions de déclarations de revenus chaque année, identifiant des modèles suspects et des anomalies qui indiquent une fraude potentielle. Ce système a réduit le temps d\'examen manuel de 65 % et augmenté la précision de détection des fraudes de 47 % par rapport aux méthodes traditionnelles.',
+                'case_studies.usa.description2': 'La mise en œuvre utilise le traitement du langage naturel pour analyser les documents fiscaux et la modélisation prédictive pour signaler les déclarations à haut risque pour audit. La première année seulement, ce système a identifié 2,8 milliards de dollars de fraude fiscale précédemment non détectée.',
+                'case_studies.estonia.title': 'Estonie : Système fiscal numérique',
+                'case_studies.estonia.description1': 'Le système révolutionnaire de l\'Estonie e-Tax and Customs Board représente l\'une des mises en œuvre de gouvernance numérique les plus avancées au monde. La plateforme alimentée par l\'IA pré-remplit automatiquement 95 % des déclarations fiscales en utilisant les données des employeurs, des banques et d\'autres systèmes gouvernementaux. Les citoyens peuvent examiner et soumettre leurs déclarations de revenus en moins de trois minutes, avec 98 % des déclarations déposées électroniquement.',
+                'case_studies.estonia.description2': 'Le système utilise l\'apprentissage automatique pour détecter les erreurs et les incohérences, réduisant les erreurs de traitement humain de 82 %. L\'approche de l\'Estonie a réduit les coûts d\'administration fiscale de 75 % tout en augmentant les taux de conformité à 94 %. Le succès de ce système a fait de l\'Estonie un leader mondial en matière de gouvernance numérique.',
+                'case_studies.singapore.title': 'Singapour : Budgétisation prédictive',
+                'case_studies.singapore.description1': 'Le ministère des Finances de Singapour a développé un système de budgétisation prédictive alimenté par l\'IA qui a révolutionné la gestion financière publique. Le système analyse plus de 200 indicateurs économiques, y compris la croissance du PIB, les taux d\'inflation, les données commerciales et les statistiques de l\'emploi pour créer des prévisions budgétaires très précises avec 92 % de précision pour l\'exercice à venir.',
+                'case_studies.singapore.description2': 'La plateforme IA utilise l\'analyse des séries chronologiques et l\'apprentissage automatique pour identifier les modèles de dépenses dans 16 ministères gouvernementaux, optimisant l\'allocation des ressources et identifiant les inefficacités budgétaires potentielles. Depuis sa mise en œuvre, Singapour a réduit l\'écart budgétaire de 8,2 % à 1,7 % et amélioré l\'efficacité de la planification budgétaire de 45 %.',
+                
+                'benefits_risks.title': 'IA dans les Finances Publiques : 5 Avantages majeurs vs 5 Risques critiques',
+                'benefits_risks.description': 'Bien que l\'IA offre des avantages significatifs pour les finances publiques, elle présente également des défis importants qui doivent être abordés.',
+                'benefits_risks.benefits.title': 'Avantages',
+                'benefits_risks.benefits.item1': 'Efficacité opérationnelle accrue',
+                'benefits_risks.benefits.item2': 'Capacités de détection des fraudes améliorées (47 % d\'amélioration)',
+                'benefits_risks.benefits.item3': 'Prévision budgétaire plus précise (92 % de précision)',
+                'benefits_risks.benefits.item4': 'Coûts de conformité réduits (75 % de réduction en Estonie)',
+                'benefits_risks.benefits.item5': 'Allocation des ressources améliorée',
+                'benefits_risks.risks.title': 'Risques',
+                'benefits_risks.risks.item1': 'Biais algorithmique dans la prise de décision',
+                'benefits_risks.risks.item2': 'Préoccupations concernant la confidentialité et la sécurité des données',
+                'benefits_risks.risks.item3': 'Manque de transparence dans les systèmes d\'IA',
+                'benefits_risks.risks.item4': 'Préoccupations concernant le déplacement de la main-d\'œuvre',
+                'benefits_risks.risks.item5': 'Coûts de mise en œuvre élevés',
+                
+                'glossary.title': 'Glossaire',
+                'glossary.description': 'Termes et concepts clés liés à l\'IA dans les finances publiques.',
+                'glossary.term1.title': 'Apprentissage automatique',
+                'glossary.term1.description': 'Un sous-ensemble de l\'IA qui permet aux systèmes d\'apprendre et de s\'améliorer à partir de l\'expérience sans programmation explicite. Utilisé dans la détection des fraudes avec 47 % d\'amélioration de la précision.',
+                'glossary.term2.title': 'Analyse prédictive',
+                'glossary.term2.description': 'L\'utilisation de données, d\'algorithmes statistiques et de techniques ML pour identifier les résultats futurs basés sur des données historiques. Atteint 92 % de précision dans la prévision budgétaire de Singapour.',
+                'glossary.term3.title': 'Traitement du langage naturel (NLP)',
+                'glossary.term3.description': 'Technologie d\'IA qui permet aux ordinateurs de comprendre, d\'interpréter et de générer le langage humain. Utilisé par l\'IRS pour analyser les documents fiscaux.',
+                'glossary.term4.title': 'Biais algorithmique',
+                'glossary.term4.description': 'Erreurs systématiques dans les systèmes d\'IA qui créent des résultats injustes, favorisant souvent un groupe par rapport aux autres. Un risque clé dans les mises en œuvre d\'IA des finances publiques.',
+                
+                'footer.logo': 'IA dans <span>les Finances Publiques</span>',
+                'footer.home': 'Accueil',
+                'footer.applications': 'Applications',
+                'footer.case_studies': 'Études de cas',
+                'footer.benefits_risks': 'Avantages et risques',
+                'footer.glossary': 'Glossaire',
+                'footer.copyright': '© 2025 IA dans les Finances Publiques ; Projet de conception de sites Web. Tous droits réservés.'
+            }
+        };
+        // Language detection and initialization
+function getInitialLang() {
+    // 1. Check localStorage for saved preference
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang && MESSAGES[savedLang]) {
+        return savedLang;
+    }
+    
+    // 2. Check browser language
+    const browserLang = navigator.language || navigator.userLanguage;
+    const shortLang = browserLang.split('-')[0].toLowerCase();
+    
+    // Map browser languages to our supported languages
+    if (shortLang === 'pl' || browserLang.startsWith('pl')) {
+        return 'pl';
+    } else if (shortLang === 'fr' || browserLang.startsWith('fr')) {
+        return 'fr';
+    } else if (shortLang === 'en' || browserLang.startsWith('en')) {
+        return 'en';
+    }
+    
+    // 3. Default to English
+    return 'en';
+}
+
+// Save language preference
+function saveLanguagePreference(lang) {
+    localStorage.setItem('preferredLanguage', lang);
+}
+        function applyTranslations(lang) {
+    // Save preference
+    saveLanguagePreference(lang);
+    
+    // Update language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        // Check which button corresponds to this language
+        if (btn.textContent.includes('EN') && lang === 'en') {
+            btn.classList.add('active');
+        } else if (btn.textContent.includes('PL') && lang === 'pl') {
+            btn.classList.add('active');
+        } else if (btn.textContent.includes('FR') && lang === 'fr') {
+            btn.classList.add('active');
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-key]').forEach(element => {
+        const key = element.getAttribute('data-i18n-key');
+        if (MESSAGES[lang] && MESSAGES[lang][key]) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = MESSAGES[lang][key];
+            } else {
+                element.innerHTML = MESSAGES[lang][key];
+            }
+        }
+    });
+}
+        function submitConsultationForm() {
+            alert('Thank you for your consultation request! We will contact you within 24 hours.');
+            document.getElementById('consultationForm').reset();
+            bootstrap.Modal.getInstance(document.getElementById('aiConsultationModal')).hide();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // 1. Initialize language
+    const initialLang = getInitialLang();
+    applyTranslations(initialLang);
+    
+    // 2. Initialize carousel
+    const carousel = new bootstrap.Carousel(document.getElementById('aiCarousel'), {
+        interval: 5000,
+        wrap: true
+    });
+    
+    // 3. Contact form handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+    });
+    
+    // 4. Reader Mode Toggle Functionality
+    const readerToggle = document.getElementById('readerModeToggle');
+    const body = document.body;
+    
+    // Check for saved reader mode preference
+    const isReaderMode = localStorage.getItem('readerMode') === 'true';
+    
+    if (isReaderMode) {
+        body.classList.add('reader-mode');
+        readerToggle.classList.add('active');
+    }
+    
+    readerToggle.addEventListener('click', function() {
+        body.classList.toggle('reader-mode');
+        readerToggle.classList.toggle('active');
+        
+        // Save preference to localStorage
+        const isNowReaderMode = body.classList.contains('reader-mode');
+        localStorage.setItem('readerMode', isNowReaderMode);
+        
+        // Change icon/text based on state
+        const icon = readerToggle.querySelector('.toggle-icon');
+        if (isNowReaderMode) {
+            icon.textContent = '📄';
+            readerToggle.title = "Switch to Normal View";
+        } else {
+            icon.textContent = '📖';
+            readerToggle.title = "Switch to Reader Mode";
+        }
+    });
+    
+    // Update tooltip based on current state
+    if (isReaderMode) {
+        readerToggle.title = "Switch to Normal View";
+        readerToggle.querySelector('.toggle-icon').textContent = '📄';
+    } else {
+        readerToggle.title = "Switch to Reader Mode";
+        readerToggle.querySelector('.toggle-icon').textContent = '📖';
+    }
+});
+    </script>
+    <button class="reader-mode-toggle" id="readerModeToggle" title="Toggle Reader Mode">
+        <span class="toggle-icon">📖</span>
+    </button>
+</body>
+</html>
